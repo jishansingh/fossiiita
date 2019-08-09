@@ -62,7 +62,7 @@
 	  </div>
 	</header>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(https://geekhaven.iiita.ac.in/foss/images/hint.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(https://geekhaven.iiita.ac.in/foss/images/hint.jpg);background-size: contain;" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
@@ -480,13 +480,13 @@
 		listOfImage=['https://live.staticflickr.com/4474/38041774782_5a2df0e86c_b.jpg','https://geekhaven.iiita.ac.in/foss/images/hint.jpg','https://live.staticflickr.com/4487/38072801131_e88d4c9a3f_c.jpg'];
 		//d.style['background-image']="url(\""+listOfImage[index%(listOfImage.length)]+"\")"
 		if(news){
-			index=index+0.3;
+			index=index+0.05;
 		}
 		else{
-			index=index-0.3;
+			index=index-0.05;
 		}
 		d.style['opacity']=index;
-		if(index>1){
+		if(index>2){
 			news=!news;
 		}
 		if(index<0){
@@ -495,7 +495,7 @@
 			imagenumber=imagenumber+1;
 		}
 	}
-	setInterval(changeBackground,1000);
+	setInterval(changeBackground,100);
 	</script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
